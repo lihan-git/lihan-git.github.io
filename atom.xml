@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lihan&#39;s blog</title>
+  <icon>https://lihanx.com/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://lihanx.com/"/>
+  <updated>2020-08-05T12:08:12.136Z</updated>
+  <id>https://lihanx.com/</id>
+  
+  <author>
+    <name>lihan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Excution policy in windows powershell</title>
+    <link href="https://lihanx.com/blog/17117.html"/>
+    <id>https://lihanx.com/blog/17117.html</id>
+    <published>2020-08-03T02:50:33.000Z</published>
+    <updated>2020-08-05T12:08:12.136Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;windows-powershell-的执行策略&quot;&gt;windows powershell 的执行策略&lt;a class=&quot;post-anchor&quot; href=&quot;#windows-powershell-的执行策略&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="powershell" scheme="https://lihanx.com/tags/powershell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图床工具选择</title>
+    <link href="https://lihanx.com/blog/6883.html"/>
+    <id>https://lihanx.com/blog/6883.html</id>
+    <published>2020-07-29T05:07:44.957Z</published>
+    <updated>2020-08-05T12:08:12.136Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;图床工具&quot;&gt;图床工具&lt;a class=&quot;post-anchor&quot; href=&quot;#图床工具&quot;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;因为搭建博客使用markdown工具，插入图片这种刚需就需要借助图床工具来来实现，本人大概了解了网
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
