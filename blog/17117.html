@@ -224,21 +224,21 @@
 <p><strong>权限更改命令</strong></p>
 <blockquote>
 <p>获取当前会话的执行权限信息</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">>Get-ExecutionPolicy -List</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">>Get-ExecutionPolicy -List<br></code></pre></td></tr></tbody></table></figure>
 </blockquote>
 <blockquote>
 <p>更改执行权限</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned</span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser<br></code></pre></td></tr></tbody></table></figure>
 </blockquote>
 <blockquote>
 <p>移除执行权限</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">>Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">>Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine<br></code></pre></td></tr></tbody></table></figure>
 </blockquote>
 <p><strong><em>总结</em></strong><br>一般来说，获取默认范围（local machine）的Bypass权限就可以了。</p>
 <p>[<em>别忘了获取powershell管理员权限</em>]</p>
 <blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">>Set-ExecutionPolicy -ExecutionPolicy Bypass</span><br></pre></td></tr></tbody></table></figure></blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">>Set-ExecutionPolicy -ExecutionPolicy Bypass<br></code></pre></td></tr></tbody></table></figure></blockquote>
 </body></html>
 
   
