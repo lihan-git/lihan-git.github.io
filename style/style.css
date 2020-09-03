@@ -176,6 +176,9 @@ a {
   color: #333;
   background: #bbdefb;
 }
+.highlight {
+  -webkit-overflow-scrolling: touch;
+}
 @font-face {
   font-family: 'Varela';
   src: url("../font/Varela.woff2") format('woff2');
@@ -505,7 +508,6 @@ a {
   border-radius: 0.2rem;
   background-color: #e3f2fd;
   border-left: 0.45rem solid #1e88e5;
-  word-break: break-all;
 }
 .post-entry blockquote footer,
 .post-wrap blockquote footer {
