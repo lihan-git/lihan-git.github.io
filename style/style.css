@@ -176,9 +176,6 @@ a {
   color: #333;
   background: #bbdefb;
 }
-.highlight {
-  -webkit-overflow-scrolling: touch;
-}
 @font-face {
   font-family: 'Varela';
   src: url("../font/Varela.woff2") format('woff2');
@@ -722,6 +719,7 @@ a {
   padding: 0.5em;
   color: #abb2bf;
   background: #282c34;
+  -webkit-overflow-scrolling: touch;
 }
 .hljs-keyword,
 .hljs-operator {

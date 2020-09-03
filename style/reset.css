@@ -168,7 +168,3 @@ a {
   color: #333;
   background: #bbdefb;
 }
-/*新增加，调整移动端代码显示*/
-.highlight {
-  -webkit-overflow-scrolling: touch;
-}
