@@ -225,6 +225,7 @@
 <p>获取当前会话的执行权限信息</p>
 <pre><code>Get-ExecutionPolicy -List</code></pre><p>更改执行权限</p>
 <pre><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre><p>移除执行权限</p>
 <pre><code>Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine</code></pre><p><strong><em>总结</em></strong></p>
 <p>一般来说，获取默认范围（local machine）的Bypass权限就可以了。</p>
