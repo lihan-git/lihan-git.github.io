@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lihanx.com/"/>
-  <updated>2020-09-05T05:13:01.204Z</updated>
+  <updated>2020-09-13T10:49:46.921Z</updated>
   <id>https://lihanx.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python的字符串和编码问题</title>
+    <link href="https://lihanx.com/blog/63088.html"/>
+    <id>https://lihanx.com/blog/63088.html</id>
+    <published>2020-09-13T08:50:12.437Z</published>
+    <updated>2020-09-13T10:49:46.921Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;python的字符串和编码问题&quot;&gt;python的字符串和编码问题&lt;a class=&quot;post-anchor&quot; href=&quot;#python的字符串和编码问题&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;在计算机内存中，统一使用
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>现代西方主流经济学发展史</title>
@@ -41,7 +61,7 @@
     <link href="https://lihanx.com/blog/17117.html"/>
     <id>https://lihanx.com/blog/17117.html</id>
     <published>2020-08-03T02:50:33.000Z</published>
-    <updated>2020-09-05T06:43:09.884Z</updated>
+    <updated>2020-09-13T02:07:00.828Z</updated>
     
     <summary type="html">
     

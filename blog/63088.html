@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     
     <title>
-      Archives - lihan&#39;s blog
+      python的字符串和编码问题 - lihan&#39;s blog
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -27,6 +27,11 @@
 </head>
   <body>
     <canvas id='pagemap'></canvas>
+    
+    <div id="post-toc" class="animated hiddenToc hide">
+      <span class="title">Toc</span>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python的字符串和编码问题"><span class="toc-text">python的字符串和编码问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#python的编解码"><span class="toc-text">python的编解码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python的格式化输出"><span class="toc-text">python的格式化输出</span></a></li></ol></li></ol>
+    </div>
     
     <div id="fixed-menu-wrap">
       <span class="iconfont icon-sousuo search-box menu-reset"></span>
@@ -61,7 +66,7 @@
           Home
         </a>
         
-        <a href="/archives" class="current">
+        <a href="/archives" class="">
           Archives
         </a>
         
@@ -115,7 +120,7 @@
             Home
           </a>
           
-          <a href="/archives" class="current">
+          <a href="/archives" class="">
             Archives
           </a>
           
@@ -156,70 +161,109 @@
     </div>
     <div id="container">
       <div class="main animated bounceInRight delay-0.7s">
-        <div id="archives">
-    
-        <div class="title">
-            Archives 
-            
-        </div>
-    
-
-
-
-
-    
-    
-    <section class="wrap">
-        <div class="meta">
-            <a href="/archives/2020" >
-                2020
-            </a>
-        </div>
-        <div class="year">
-            
-            <article class="item">
-            <a href="/blog/63088.html" title="python的字符串和编码问题">
-                <span>2020/09/13</span>
-                <span>python的字符串和编码问题</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/blog/3919.html" title="现代西方主流经济学发展史">
-                <span>2020/08/29</span>
-                <span>现代西方主流经济学发展史</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/blog/17117.html" title="Excution policy in windows powershell">
-                <span>2020/08/03</span>
-                <span>Excution policy in windows powershell</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/blog/6883.html" title="图床工具选择">
-                <span>2020/07/29</span>
-                <span>图床工具选择</span>
-            </a>
-            </article>
-            
-    
-        </div>
-    </section>
+        <article class="post-entry">
+    <div class="header">
       
-<div class="paginator">
-    <span class="page-number current">1</span>
-</div>
-</div>
+      <div class="title">python的字符串和编码问题</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2020/09/13</span>
+        </span>
 
+        
+          <span class="item leancloud-visitors" id="/blog/63088.html" data-flag-title="python的字符串和编码问题">
+            <span class="iconfont icon-eye1"></span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        
+
+        
+        
+        
+      </div>
+      <div>
+      </div>
+    </div>
+    <html><head></head><body><h2 id="python的字符串和编码问题">python的字符串和编码问题<a class="post-anchor" href="#python的字符串和编码问题"></a></h2><p><em>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码</em></p>
+<blockquote>
+<p><code>ord()</code>函数获取字符的整数表示，<code>chr()</code>函数把编码转换为对应的字符</p>
+<p><code>ord('A')</code></p>
+<p><code>chr('48')</code></p>
+</blockquote>
+<h3 id="python的编解码">python的编解码<a class="post-anchor" href="#python的编解码"></a></h3><p>python在内存中的字符串类型为<code>str</code>,如果需要网络传输或存放在硬盘中需要转变为<code>bytes</code>类型。</p>
+<p><code>str</code>类型可以通过编码的方法转换为<code>bytes</code>类型</p>
+<blockquote>
+<p><code>'中文'.encode('utf-8')</code></p>
+</blockquote>
+<p><code>bytes</code>类型可以通过解码的方法转换为<code>str</code>类型</p>
+<blockquote>
+<p><code>b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')</code></p>
+</blockquote>
+<p><code>len()</code>函数计算<code>str</code>类型字符串的字符数或<code>bytes</code>类型字符串的字节数。</p>
+<p>当源代码包含中文字符或其他非ASCII码字符时，最好在源文件的头部加上</p>
+<blockquote>
+<p><code>#!/usr/bin/env python3</code></p>
+<p><code># -*- coding: utf-8 -*-</code></p>
+</blockquote>
+<h3 id="python的格式化输出">python的格式化输出<a class="post-anchor" href="#python的格式化输出"></a></h3><p>python的格式化输出的方法有三种，我们取最简单的f-string为例</p>
+<pre><code class="python">>>> r = 2.5
+>>> s = 3.14 * r ** 2
+>>> print(f'The area of a circle with radius {r} is {s:.2f}')
+The area of a circle with radius 2.5 is 19.62</code></pre>
+</body></html>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/zhifubao.png" target="_block" class="bg" style="background-image:url('/images/zhifubao.png')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/weixin.png" target="_block" class="bg" style="background-image:url('/images/weixin.png')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+    </div>
+    <div class="item right">
+        
+          <a href="/blog/3919.html">现代西方主流经济学发展史</a>
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="https://lihanx.com">lihan</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="https://lihanx.com/blog/63088.html">https://lihanx.com/blog/63088.html</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="https://lihanx.com">lihan</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
         <footer>
           <div class="copyright">
             ©2020
