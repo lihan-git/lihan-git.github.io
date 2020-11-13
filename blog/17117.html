@@ -203,14 +203,8 @@
 <p>AllSigned:<br>1.可以运行脚本</p>
 <p>2.要求脚本和配置文件由可信任的publisher发布或者脚本由自己在local computer上写成</p>
 <p>3.非信任来源的脚本运行给出提醒</p>
-</blockquote>
-<blockquote>
 <p>Bypass:<br>运行所有脚本，没有提醒</p>
-</blockquote>
-<blockquote>
 <p>RemoteSigned:<br>可以运行脚本，但需要网络下载数字签名，其中在local computer上写的脚本不需要数字签名</p>
-</blockquote>
-<blockquote>
 <p>Restricted:<br>允许独立的命令，但不允许运行脚本</p>
 </blockquote>
 <p><strong>权限范围</strong></p>
@@ -223,7 +217,8 @@
 </blockquote>
 <p><strong>权限更改命令</strong></p>
 <p>获取当前会话的执行权限信息</p>
-<pre><code>Get-ExecutionPolicy -List</code></pre><p>更改执行权限</p>
+<pre><code>Get-ExecutionPolicy -List
+</code></pre><p>更改执行权限</p>
 <p><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned</code></p>
 <p><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></p>
 <p>移除执行权限</p>
@@ -231,7 +226,8 @@
 <p><strong><em>总结</em></strong></p>
 <p>一般来说，获取默认范围（local machine）的Bypass权限就可以了。</p>
 <p>[<em>别忘了获取powershell管理员权限</em>]</p>
-<pre><code>Set-ExecutionPolicy -ExecutionPolicy Bypass</code></pre></body></html>
+<pre><code>Set-ExecutionPolicy -ExecutionPolicy Bypass
+</code></pre></body></html>
 
   
     <div class="post-reward">

@@ -198,8 +198,8 @@
 <p>当一个game有多个解时，我们定义参数机制argumented mechanism$(S,\omega,\sigma)$，$\sigma$为一个推荐解。推荐解$\sigma$表示机制设计者对参与者的一个推荐。如果这个推荐与能够充分捕捉到参与者激励的solution concept保持一致，然后没有参与者会拥有源自推荐的激励，那么$\sigma$是一个关于参与者如何行动的合理预测。</p>
 <p>当$\sigma$是根据solution concept得到的解时，我们说$(S,\omega)$或$(S,\omega,\sigma)$的implements性能为$\xi=\omega \circ \sigma$。换句话说，机制的均衡结果为$\xi$。</p>
 <h3 id="第2章-Vickrey-Clarke-Grove-机制">第2章 Vickrey-Clarke-Grove 机制<a class="post-anchor" href="#第2章-Vickrey-Clarke-Grove-机制"></a></h3><p>VCG分析已经成为一个重要的标准，在后面的章节中我们会发现VCG理论和拍卖理论的其他部分有很深的联系。</p>
-<h4 id="2-1-公式化">2.1 公式化<a class="post-anchor" href="#2-1-公式化"></a></h4><p>$N={0,\cdots,n}$表示参与者集合，其中0表示机制操纵者。$X$表示可能的决策集合，元素通常用$x$表示。$(x,p)$表示outcome，$x$表示决策，$p$表示参与者支付向量$p=(p^1,p^2,\cdots,p^n)$,支付向量中的元素可正可负。</p>
-<p>每个参与者$i$根据结果$(x,p)$的收益是$i$做决策$x$的价值，用下面公式表示为$$u^i((x,p),\vec t) \equiv u^i(x,t^i)-p^i$$</p>
+<h4 id="2-1-公式化">2.1 公式化<a class="post-anchor" href="#2-1-公式化"></a></h4><p>$N=\{0,\cdots,n\}$表示参与者集合，其中0表示机制操纵者。$X$表示可能的决策集合，元素通常用$x$表示。$(x,p)$表示outcome，$x$表示决策，$p$表示参与者支付向量$p=(p^1,p^2,\cdots,p^n)$,支付向量中的元素可正可负。</p>
+<p>每个参与者$i$根据结果$(x,p)$的收益是$i$做决策$x$的价值，用下面公式表示为<script type="math/tex">u^i((x,p),\vec t) \equiv u^i(x,t^i)-p^i</script></p>
 <p>我们可知$i$做决策$x$的价值仅仅取决于自己的类型$t^i$,这种特殊的拟线性效用函数在本章的规范化分析中扮演不可或缺的角色。</p>
 <p>Quasilinear Utility: Quasilinear utility functions are linear in one argument,generally the numeraire(计价单位),and strictly concave for the other arguments.</p>
 <p>拟线性效用假设暗示竞标者可以进行任意的现金转移。在机制设计中，拟线性效用确保代理人可以通过side payments补偿其他人。</p>
@@ -208,12 +208,12 @@
 <p>有些时候机制设计者想要在$p^0\equiv 0$的情况下运行一个拍卖，此时意味着There is never any net transfer to the auciton designer。这些balance-budget机制是非常有用的。</p>
 <p>VCG机制是incentive-compatible direct机制，这意味着<1>$S=\Theta$；<2>strategy profile $(\sigma^i(t^i)=t^i)_{i \in N}$是均衡的。第一个条件表示每一个参与者都必须report一个可能的type给机制操控者。第二个条件表示无论我们选择何种solution concept，Truthful report 一个人的type是一个均衡。对于VCG机制我聚焦于dominant-strategy implementation，所以相对的，solution concept就是每个参与者plays a dominant strategy。</p>
 <p>incentive-compatible direct机制的一项诉求是避免参与者有进行复杂策略计算的需要。Truthful report符合每一位参与者的利益。例如second-price sealed-bid auction就是一种dominant-strategy incentive-compatible direct机制。</p>
-<p>VCG机制操控者使用reported types来计算最大化总和价值$V(X,N,\vec t)$和对应的决策$\hat x(X,N,\vec t)$ $$V(X,N,\vec t)=max_{x \in X} \sum_{j \in N} V^j(x,t^j) \tag{2.1}$$ $$\hat x(X,N,\vec t) \in arg , max_{x \in X} \sum_{j \in N} V^j(x,t^j) \tag{2.2}$$</p>
+<p>VCG机制操控者使用reported types来计算最大化总和价值$V(X,N,\vec t)$和对应的决策$\hat x(X,N,\vec t)$ <script type="math/tex">V(X,N,\vec t)=max_{x \in X} \sum_{j \in N} V^j(x,t^j) \tag{2.1}</script> <script type="math/tex">\hat x(X,N,\vec t) \in arg \, max_{x \in X} \sum_{j \in N} V^j(x,t^j) \tag{2.2}</script></p>
 <p>很多人认为使用如此直接的方式会导致失败，因为每一个参与者似乎都有动机去误报偏好来影响决策。事实上，参与者的动机不仅取决于决策，也取决于cash transfer。</p>
-<p>为了捕捉参与者$i$的report对于outcome的影响，我们引入一个假设null report，表示参与者report他的决策是中立的，并且只关心transfer。除了$i$以外的部分记为$N-i$，其中$0 \in N-i$，表示机制设计者，他的收益是机制的纯收益。当参与者$i$做出null report时，VCG机制的最优决策为$\hat x(X,N-i,t^{-i})$，对应剩余参与者的全部收益为$V(X,N-i,t^{-i})$，又因为机制设计者可以从参与者$i$中获得一个payment $h^i(t^{-i})$，因此，如果参与者$i$做出null report，在集合$N-i$中的参与者的全部收益为$$V(X,N-i,t^{-i})+h^i(t^{-i})$$</p>
-<p>假设reported type profile为$\vec t$，$i$的payment为$\hat p^i(X,N,\vec t)+h^i(t^{-i})$。所以，$\hat p^i(X,N,\vec t)$是$i$的additional payment。决策$\hat x(X,N,\vec t)$通常会取决于$i$的report，因此，集合$N-i$的全部收益为$\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)+\hat p^i(X,N,\vec t)+h^i(t^{-i})$，现在取$i$做出null report，我们有$$\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)+\hat p^i(X,N,\vec t)+h^i(t^{-i})=h^i(t^{-i})+V(X,N-i,t^{-i}) \tag{2.3}$$</p>
-<p>即，$$\hat p^i(X,N,\vec t)=V(X,N-i,t^{-i})-\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)$$</p>
-<p>即，$$\hat p^i(X,N,\vec t)=\sum_{j \in N-i} V^j(\hat x(X,N-i,t^{-i}),t^j)-\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)\tag{2.4}$$</p>
+<p>为了捕捉参与者$i$的report对于outcome的影响，我们引入一个假设null report，表示参与者report他的决策是中立的，并且只关心transfer。除了$i$以外的部分记为$N-i$，其中$0 \in N-i$，表示机制设计者，他的收益是机制的纯收益。当参与者$i$做出null report时，VCG机制的最优决策为$\hat x(X,N-i,t^{-i})$，对应剩余参与者的全部收益为$V(X,N-i,t^{-i})$，又因为机制设计者可以从参与者$i$中获得一个payment $h^i(t^{-i})$，因此，如果参与者$i$做出null report，在集合$N-i$中的参与者的全部收益为<script type="math/tex">V(X,N-i,t^{-i})+h^i(t^{-i})</script></p>
+<p>假设reported type profile为$\vec t$，$i$的payment为$\hat p^i(X,N,\vec t)+h^i(t^{-i})$。所以，$\hat p^i(X,N,\vec t)$是$i$的additional payment。决策$\hat x(X,N,\vec t)$通常会取决于$i$的report，因此，集合$N-i$的全部收益为$\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)+\hat p^i(X,N,\vec t)+h^i(t^{-i})$，现在取$i$做出null report，我们有<script type="math/tex">\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)+\hat p^i(X,N,\vec t)+h^i(t^{-i})=h^i(t^{-i})+V(X,N-i,t^{-i}) \tag{2.3}</script></p>
+<p>即，<script type="math/tex">\hat p^i(X,N,\vec t)=V(X,N-i,t^{-i})-\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)</script></p>
+<p>即，<script type="math/tex">\hat p^i(X,N,\vec t)=\sum_{j \in N-i} V^j(\hat x(X,N-i,t^{-i}),t^j)-\sum_{j \in N-i} V^j(\hat x(X,N,\vec t),t^j)\tag{2.4}</script></p>
 <p>根据(2.4)，如果参与者$i$的report导致决策$\hat x$发生变化，那么$i$需要额外支付$hat p^i(X,N,\vec t)$来补偿$N-i$中成员的损失。</p>
 <h4 id="定义">定义<a class="post-anchor" href="#定义"></a></h4><p>1.一个Vickrey-Clarke-Groves(VCG)机制$(\Theta,(\hat x,\hat p+h))$是一个direct机制，其中$\hat x$满足(2.1),$\hat p$满足(2.4)，payments由$\hat p(X,N,\vec t)+h^i(t^{-i})$决定。</p>
 <p>2.如果$\hat x(X,N,\vec t) \neq \hat x(X,N-i,t^{-i})$，那么这个参与者$i$是关键的。</p>
@@ -224,18 +224,18 @@
 <p>严格显性策略：一个严格显性策略总是为player提供一个更大的效用，无论其他player的策略是什么。</p>
 <p>弱显性策略：一个弱显性策略总能为player提供一个至少和其他player同等的效用，并且此策略比总是比其他策略的效用更大。</p>
 </blockquote>
-<p>有些truthful report情况尽管对VCG机制总是最优的，但不是一个显性策略。例如，一件物品成本是200元，第一个人的价值评估为300元，第二个人的价值评估为150元，那么第一个人的report价格在区间${0,300}$，第二个人的report价格在区间${0,150}$，根据VCG机制，第二个人的report对实际结果没有影响。</p>
+<p>有些truthful report情况尽管对VCG机制总是最优的，但不是一个显性策略。例如，一件物品成本是200元，第一个人的价值评估为300元，第二个人的价值评估为150元，那么第一个人的report价格在区间$\{0,300\}$，第二个人的report价格在区间$\{0,150\}$，根据VCG机制，第二个人的report对实际结果没有影响。</p>
 <p>满足条件(1)，truthful reporting是一个总是最优的策略。</p>
 <p>满足条件(1)(2)，truthful reporting是一个显性策略。</p>
-<p>(1)对于所有的$t^{-i}$，有$t^i \in arg , max_{\tilde t^i} {v^i(\hat x(X,N,\tilde t^i,t^{-i}),t^i)-\hat p^i(X,N,\tilde t^i,t^{-i})}$</p>
-<p>(2)如果$\bar t^i \neq t^i$，然后对于一些$t^{-i}$，有$\bar t^i \notin arg , max_{\tilde t^i} {v^i(\hat x(X,N,\tilde t^i,t^{-i}),t^i)-\hat p^i(X,N,\tilde t^i,t^{-i})}$</p>
+<p>(1)对于所有的$t^{-i}$，有$t^i \in arg \, max_{\tilde t^i} \{v^i(\hat x(X,N,\tilde t^i,t^{-i}),t^i)-\hat p^i(X,N,\tilde t^i,t^{-i})\}$</p>
+<p>(2)如果$\bar t^i \neq t^i$，然后对于一些$t^{-i}$，有$\bar t^i \notin arg \, max_{\tilde t^i} \{v^i(\hat x(X,N,\tilde t^i,t^{-i}),t^i)-\hat p^i(X,N,\tilde t^i,t^{-i})\}$</p>
 <p>为了排除一些特定的例子，我们使用下面的条件：</p>
 <p><strong><em>All reports are petentially pivotal:</em></strong> 对于所有的$i \in N$并且$t^i,\tilde t^i \in \Theta^i$，存在$t^{-i} \in \Theta^{-i}$，使$\sum_{j \in N} v^j(\hat x(X,N,\tilde t^i,t^{-i}),t^j)<V(X,N,\vec t)$</p>
 <p><strong>定理2.1</strong> 在任意的VCG机制中，truthful reporting是一个always optimal策略。如果所有的report是potentially pivotal，那么truthful reporting是一个dominant策略。</p>
 <h4 id="2-3-平衡预算">2.3 平衡预算<a class="post-anchor" href="#2-3-平衡预算"></a></h4><p>在公共物品应用中，设计者可能想要确保除了机制操控者外所有参与者的payment总和为零。这种情况被称为balancing the budget。</p>
-<p>这种情况下，机制设计者对于决策没有独立的价值，所以我们的模型变为$N={1,\cdots,n}$</p>
-<p>定义：一个直接机制$(x,p)$满足预算平衡，如果对于所有有限集$\Theta$并且所有的$\vec t \in \Theta$，全部的transfer和为零。$$\sum_{i \in N} p^i(X,N,\vec t)=0$$</p>
-<p>预算平衡的一个必要条件是存在函数$f^i$，对所有的$\vec t$，有$$V(X,N,\vec t)=\sum_{i \in N} f^i(t^{-i}) \tag{2.5}$$</p>
+<p>这种情况下，机制设计者对于决策没有独立的价值，所以我们的模型变为$N=\{1,\cdots,n\}$</p>
+<p>定义：一个直接机制$(x,p)$满足预算平衡，如果对于所有有限集$\Theta$并且所有的$\vec t \in \Theta$，全部的transfer和为零。<script type="math/tex">\sum_{i \in N} p^i(X,N,\vec t)=0</script></p>
+<p>预算平衡的一个必要条件是存在函数$f^i$，对所有的$\vec t$，有<script type="math/tex">V(X,N,\vec t)=\sum_{i \in N} f^i(t^{-i}) \tag{2.5}</script></p>
 <p><strong>定理2.2</strong> 存在一个VCG机制满足预算平衡当且仅当存在函数$f^i$使公式(2.5)成立。</p>
 <h4 id="2-4-唯一性">2.4 唯一性<a class="post-anchor" href="#2-4-唯一性"></a></h4><p>VCG以外的机制可以使用dominant strategy做出有效率的决策吗？答案是这取决于关于环境的一些额外的假设。</p>
 <p><strong>定理2.3</strong> 假设对于每一个$i$，有$\Theta^i=[0,1]$（或者说$\Theta^i$是smoothly path connected）并且对于每一个决策结果$x$，有$V^i(x,t^i)$关于第二个参数可微的，那么任何有效率的incentive-compatible direct机制是一个VCG机制。</p>
