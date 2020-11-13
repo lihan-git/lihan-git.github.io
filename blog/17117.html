@@ -23,8 +23,7 @@
     
 <link rel="stylesheet" href="/style/style.css">
 
-  <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
-<style>mjx-container[jax="SVG"] {
+  <meta name="generator" content="Hexo 4.2.1"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -141,7 +140,8 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
+</head>
   <body>
     <canvas id='pagemap'></canvas>
     
@@ -313,29 +313,25 @@ mjx-container[display="true"] + br {
       <div>
       </div>
     </div>
-    <html><head></head><body><h2 id="windows-powershell-的执行策略">windows powershell 的执行策略<a class="post-anchor" href="#windows-powershell-的执行策略"></a></h2><p>powershell 相比于CMD命令行有很大的优势，特别是和linux命令结合方面，powershell 可以和Linux紧密的结合起来。所以现在是全面转向powershell的时候了！</p>
+    <html><head></head><body><h2 id="windows-powershell-的执行策略">windows powershell 的执行策略<a class="post-anchor" href="#windows-powershell-的执行策略"></a></h2>
+<p>powershell 相比于CMD命令行有很大的优势，特别是和linux命令结合方面，powershell 可以和Linux紧密的结合起来。所以现在是全面转向powershell的时候了！</p>
 <p>powershell在Windows平台默认是不能执行脚本的，需要自行了解excution policy。下面从excution policy权限种类、权限范围和相关命令来介绍Windows平台下powershell的excution policy。</p>
-<p><strong>权限种类</strong></p>
+<p><strong>权限种类</strong> >AllSigned:<br>
+>1.可以运行脚本 > >2.要求脚本和配置文件由可信任的publisher发布或者脚本由自己在local computer上写成 > >3.非信任来源的脚本运行给出提醒</p>
 <blockquote>
-<p>AllSigned:<br>1.可以运行脚本</p>
-<p>2.要求脚本和配置文件由可信任的publisher发布或者脚本由自己在local computer上写成</p>
-<p>3.非信任来源的脚本运行给出提醒</p>
-<p>Bypass:<br>运行所有脚本，没有提醒</p>
-<p>RemoteSigned:<br>可以运行脚本，但需要网络下载数字签名，其中在local computer上写的脚本不需要数字签名</p>
-<p>Restricted:<br>允许独立的命令，但不允许运行脚本</p>
+<p>Bypass: 运行所有脚本，没有提醒</p>
 </blockquote>
-<p><strong>权限范围</strong></p>
 <blockquote>
-<p>MachinePolicy: 所有使用此计算机的人（组策略）</p>
-<p>UserPolicy: 当前使用此计算机的人（组策略）</p>
-<p>Process: 当前powershell会话</p>
-<p>Current User: 当前使用此计算机的人</p>
-<p>Local Machine: 所有使用此计算机的人[系统默认值]</p>
+<p>RemoteSigned: 可以运行脚本，但需要网络下载数字签名，其中在local computer上写的脚本不需要数字签名</p>
 </blockquote>
+<blockquote>
+<p>Restricted: 允许独立的命令，但不允许运行脚本</p>
+</blockquote>
+<p><strong>权限范围</strong> >MachinePolicy: 所有使用此计算机的人（组策略） > >UserPolicy: 当前使用此计算机的人（组策略） > >Process: 当前powershell会话 > >Current User: 当前使用此计算机的人 > >Local Machine: 所有使用此计算机的人[系统默认值]</p>
 <p><strong>权限更改命令</strong></p>
 <p>获取当前会话的执行权限信息</p>
-<pre><code>Get-ExecutionPolicy -List
-</code></pre><p>更改执行权限</p>
+<pre><code>Get-ExecutionPolicy -List</code></pre>
+<p>更改执行权限</p>
 <p><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned</code></p>
 <p><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></p>
 <p>移除执行权限</p>
@@ -343,8 +339,8 @@ mjx-container[display="true"] + br {
 <p><strong><em>总结</em></strong></p>
 <p>一般来说，获取默认范围（local machine）的Bypass权限就可以了。</p>
 <p>[<em>别忘了获取powershell管理员权限</em>]</p>
-<pre><code>Set-ExecutionPolicy -ExecutionPolicy Bypass
-</code></pre></body></html>
+<pre><code>Set-ExecutionPolicy -ExecutionPolicy Bypass</code></pre>
+</body></html>
 
   
     <div class="post-reward">

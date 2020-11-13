@@ -23,8 +23,7 @@
     
 <link rel="stylesheet" href="/style/style.css">
 
-  <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
-<style>mjx-container[jax="SVG"] {
+  <meta name="generator" content="Hexo 4.2.1"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -141,7 +140,8 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
+</head>
   <body>
     <canvas id='pagemap'></canvas>
     
@@ -302,13 +302,15 @@ mjx-container[display="true"] + br {
       <div>
       </div>
     </div>
-    <html><head></head><body><h2 id="python的字符串和编码问题">python的字符串和编码问题<a class="post-anchor" href="#python的字符串和编码问题"></a></h2><p><em>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码</em></p>
+    <html><head></head><body><h2 id="python的字符串和编码问题">python的字符串和编码问题<a class="post-anchor" href="#python的字符串和编码问题"></a></h2>
+<p><em>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码</em></p>
 <blockquote>
 <p><code>ord()</code>函数获取字符的整数表示，<code>chr()</code>函数把编码转换为对应的字符</p>
 <p><code>ord('A')</code></p>
 <p><code>chr('48')</code></p>
 </blockquote>
-<h3 id="python的编解码">python的编解码<a class="post-anchor" href="#python的编解码"></a></h3><p>python在内存中的字符串类型为<code>str</code>,如果需要网络传输或存放在硬盘中需要转变为<code>bytes</code>类型。</p>
+<h3 id="python的编解码">python的编解码<a class="post-anchor" href="#python的编解码"></a></h3>
+<p>python在内存中的字符串类型为<code>str</code>,如果需要网络传输或存放在硬盘中需要转变为<code>bytes</code>类型。</p>
 <p><code>str</code>类型可以通过编码的方法转换为<code>bytes</code>类型</p>
 <blockquote>
 <p><code>'中文'.encode('utf-8')</code></p>
@@ -323,8 +325,8 @@ mjx-container[display="true"] + br {
 <p><code>#!/usr/bin/env python3</code></p>
 <p><code># -*- coding: utf-8 -*-</code></p>
 </blockquote>
-<h3 id="python的格式化输出">python的格式化输出<a class="post-anchor" href="#python的格式化输出"></a></h3><p>python的格式化输出的方法有三种，我们取最简单的f-string为例</p>
-<p>></p>
+<h3 id="python的格式化输出">python的格式化输出<a class="post-anchor" href="#python的格式化输出"></a></h3>
+<p>python的格式化输出的方法有三种，我们取最简单的f-string为例</p>
 <blockquote>
 <p><code>>>> r = 2.5</code></p>
 <p><code>>>> s = 3.14 * r ** 2</code></p>

@@ -23,8 +23,7 @@
     
 <link rel="stylesheet" href="/style/style.css">
 
-  <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
-<style>mjx-container[jax="SVG"] {
+  <meta name="generator" content="Hexo 4.2.1"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -141,13 +140,14 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="lihan's blog" type="application/atom+xml">
+</head>
   <body>
     <canvas id='pagemap'></canvas>
     
     <div id="post-toc" class="animated hiddenToc hide">
       <span class="title">Toc</span>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#http-live-streaming-介绍"><span class="toc-text">http live streaming 介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、Media-Segments"><span class="toc-text">一、Media Segments</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Media-Segment支持的格式"><span class="toc-text">1.1 Media Segment支持的格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-MPEG-2传输流"><span class="toc-text">1.2 MPEG-2传输流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-fragmented-MPEG-4"><span class="toc-text">1.3 fragmented MPEG-4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-Packed-Audio-音频"><span class="toc-text">1.4 Packed Audio[音频]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-webVTT-字幕"><span class="toc-text">1.5 webVTT[字幕]</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、Playlist"><span class="toc-text">二、Playlist</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Playlist中的定义"><span class="toc-text">2.1 Playlist中的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-属性列表"><span class="toc-text">2.2 属性列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-Playlist标签"><span class="toc-text">2.3 Playlist标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-1-基础标签"><span class="toc-text">2.3.1 基础标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXTM3U"><span class="toc-text">EXTM3U</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-VERSION"><span class="toc-text">EXT-X-VERSION:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-2-Media-Segment-标签"><span class="toc-text">2.3.2 Media Segment 标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXTINF-lt-时长-gt-lt-标题-gt"><span class="toc-text">EXTINF:,[]</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-BYTERANGE-lt-字长-gt-lt-字节偏移量-gt"><span class="toc-text">EXT-X-BYTERANGE:[@]</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-KEY-lt-属性列表-gt"><span class="toc-text">EXT-X-KEY:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-MAP-lt-属性列表-gt"><span class="toc-text">EXT-X-MAP:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-PROGRAM-DATE-TIME-lt-日期-时间-秒-gt"><span class="toc-text">EXT-X-PROGRAM-DATE-TIME:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-PROGRAM-DATE-TIME-2010-02-19T14-54-23-031-08-00"><span class="toc-text">EXT-X-PROGRAM-DATE-TIME:2010-02-19T14:54:23.031+08:00</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-DATERANGE-lt-属性列表-gt"><span class="toc-text">EXT-X-DATERANGE:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-3-Media-Playlist标签"><span class="toc-text">2.3.3 Media Playlist标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-TARGETDURATION-lt-最大时长-gt"><span class="toc-text">EXT-X-TARGETDURATION:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-MEDIA-SEQUENCE-lt-序列号-gt"><span class="toc-text">EXT-X-MEDIA-SEQUENCE:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-ENDLIST"><span class="toc-text">EXT-X-ENDLIST</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-PLAYLIST-TYPE-lt-类型-gt"><span class="toc-text">EXT-X-PLAYLIST-TYPE:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-I-FRAME-ONLY"><span class="toc-text">EXT-X-I-FRAME-ONLY</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-4-Master-Playlist-标签"><span class="toc-text">2.3.4 Master Playlist 标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-MEDIA-lt-属性列表-gt"><span class="toc-text">EXT-X-MEDIA:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-STREAM-INF-lt-属性列表-gt"><span class="toc-text">EXT-X-STREAM-INF:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-I-FRAME-STREAM-INF-lt-属性列表-gt"><span class="toc-text">EXT-X-I-FRAME-STREAM-INF:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-SESSION-DATA-lt-属性列表-gt"><span class="toc-text">EXT-X-SESSION-DATA:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-SESSION-KEY-lt-属性列表-gt"><span class="toc-text">EXT-X-SESSION-KEY:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-5-Media-or-Master-Playlist-标签"><span class="toc-text">2.3.5 Media or Master Playlist 标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-INDEPENDENT-SEGMENTS"><span class="toc-text">EXT-X-INDEPENDENT-SEGMENTS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EXT-X-START-lt-属性列表-gt"><span class="toc-text">EXT-X-START:</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#http-live-streaming-介绍"><span class="toc-text">http live streaming 介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一media-segments"><span class="toc-text">一、Media Segments</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#media-segment支持的格式"><span class="toc-text">1.1 Media Segment支持的格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mpeg-2传输流"><span class="toc-text">1.2 MPEG-2传输流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fragmented-mpeg-4"><span class="toc-text">1.3 fragmented MPEG-4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#packed-audio音频"><span class="toc-text">1.4 Packed Audio[音频]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webvtt字幕"><span class="toc-text">1.5 webVTT[字幕]</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二playlist"><span class="toc-text">二、Playlist</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#playlist中的定义"><span class="toc-text">2.1 Playlist中的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性列表"><span class="toc-text">2.2 属性列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#playlist标签"><span class="toc-text">2.3 Playlist标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基础标签"><span class="toc-text">2.3.1 基础标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#media-segment-标签"><span class="toc-text">2.3.2 Media Segment 标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#media-playlist标签"><span class="toc-text">2.3.3 Media Playlist标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#master-playlist-标签"><span class="toc-text">2.3.4 Master Playlist 标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#media-or-master-playlist-标签"><span class="toc-text">2.3.5 Media or Master Playlist 标签</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div id="fixed-menu-wrap">
@@ -302,33 +302,48 @@ mjx-container[display="true"] + br {
       <div>
       </div>
     </div>
-    <html><head></head><body><h1 id="http-live-streaming-介绍">http live streaming 介绍<a class="post-anchor" href="#http-live-streaming-介绍"></a></h1><p><strong><em>HLS在互联网上提供一个可靠低成本的连续、长视频传输方式</em></strong></p>
-<h2 id="一、Media-Segments">一、Media Segments<a class="post-anchor" href="#一、Media-Segments"></a></h2><p>一个media segment被URI和可选字节范围指定；每一个media segment的时长被media playlist的EXINF标签指定。</p>
-<h3 id="1-1-Media-Segment支持的格式">1.1 Media Segment支持的格式<a class="post-anchor" href="#1-1-Media-Segment支持的格式"></a></h3><p>Media segment在被解析之前，要初始化解析器，这个阶段叫做Media Initialization Section。用EXT-X-MAP标签来指定。</p>
-<h3 id="1-2-MPEG-2传输流">1.2 MPEG-2传输流<a class="post-anchor" href="#1-2-MPEG-2传输流"></a></h3><p>MPEG-2传输流segment的Media Initialization Section==Program Association Table(PAT)+Program Map Table(PMT)</p>
-<h3 id="1-3-fragmented-MPEG-4">1.3 fragmented MPEG-4<a class="post-anchor" href="#1-3-fragmented-MPEG-4"></a></h3><p>fragmented MPEG-4(fMP4)的Media Initialization Section==FileType Box+Movie Box</p>
+    <html><head></head><body><h1 id="http-live-streaming-介绍">http live streaming 介绍<a class="post-anchor" href="#http-live-streaming-介绍"></a></h1>
+<p><strong><em>HLS在互联网上提供一个可靠低成本的连续、长视频传输方式</em></strong></p>
+<h2 id="一media-segments">一、Media Segments<a class="post-anchor" href="#一media-segments"></a></h2>
+<p>一个media segment被URI和可选字节范围指定；每一个media segment的时长被media playlist的EXINF标签指定。</p>
+<h3 id="media-segment支持的格式">1.1 Media Segment支持的格式<a class="post-anchor" href="#media-segment支持的格式"></a></h3>
+<p>Media segment在被解析之前，要初始化解析器，这个阶段叫做Media Initialization Section。用EXT-X-MAP标签来指定。</p>
+<h3 id="mpeg-2传输流">1.2 MPEG-2传输流<a class="post-anchor" href="#mpeg-2传输流"></a></h3>
+<p>MPEG-2传输流segment的Media Initialization Section==Program Association Table(PAT)+Program Map Table(PMT)</p>
+<h3 id="fragmented-mpeg-4">1.3 fragmented MPEG-4<a class="post-anchor" href="#fragmented-mpeg-4"></a></h3>
+<p>fragmented MPEG-4(fMP4)的Media Initialization Section==FileType Box+Movie Box</p>
 <p>每一个fMP4 segment在Media playlist中必须有一个EXT-X-MAP标签</p>
-<h3 id="1-4-Packed-Audio-音频">1.4 Packed Audio[音频]<a class="post-anchor" href="#1-4-Packed-Audio-音频"></a></h3><p>Packed Audio 没有Media Initialization Section，Packed Audio Segment==encoded audio samples + ID3标签。</p>
-<h3 id="1-5-webVTT-字幕">1.5 webVTT[字幕]<a class="post-anchor" href="#1-5-webVTT-字幕"></a></h3><p>webVTT segments 搬运字幕；webVTT segment的Media Initialization Section是webVTT header</p>
-<h2 id="二、Playlist">二、Playlist<a class="post-anchor" href="#二、Playlist"></a></h2><p>每一个Playlist文件必须要有一个定义的路径组件，要么是URI，要么是HTTP Content-Type。</p>
-<h3 id="2-1-Playlist中的定义">2.1 Playlist中的定义<a class="post-anchor" href="#2-1-Playlist中的定义"></a></h3><p>Playlist在UTF-8定义下解码；</p>
+<h3 id="packed-audio音频">1.4 Packed Audio[音频]<a class="post-anchor" href="#packed-audio音频"></a></h3>
+<p>Packed Audio 没有Media Initialization Section，Packed Audio Segment==encoded audio samples + ID3标签。</p>
+<h3 id="webvtt字幕">1.5 webVTT[字幕]<a class="post-anchor" href="#webvtt字幕"></a></h3>
+<p>webVTT segments 搬运字幕；webVTT segment的Media Initialization Section是webVTT header</p>
+<h2 id="二playlist">二、Playlist<a class="post-anchor" href="#二playlist"></a></h2>
+<p>每一个Playlist文件必须要有一个定义的路径组件，要么是URI，要么是HTTP Content-Type。</p>
+<h3 id="playlist中的定义">2.1 Playlist中的定义<a class="post-anchor" href="#playlist中的定义"></a></h3>
+<p>Playlist在UTF-8定义下解码；</p>
 <p>每一行要么是URI，要么是空白行，要么以#开头；</p>
 <p>以#开头不是注释就是标签；</p>
 <p>以#EXT开头的是标签；</p>
 <p>一个URI行识别一个Media Segment或Playlist文件。</p>
-<h3 id="2-2-属性列表">2.2 属性列表<a class="post-anchor" href="#2-2-属性列表"></a></h3><p>某些具有‘值’的标签组成属性列表；</p>
+<h3 id="属性列表">2.2 属性列表<a class="post-anchor" href="#属性列表"></a></h3>
+<p>某些具有‘值’的标签组成属性列表；</p>
 <p>属性名有26个大写字母或数字‘0-9’或‘-’组成；</p>
 <p>（属性名=属性值）中间不能有任何空白。</p>
-<h3 id="2-3-Playlist标签">2.3 Playlist标签<a class="post-anchor" href="#2-3-Playlist标签"></a></h3><p>Playlist标签要么是指定全局参数，要么是指定media segment 或 media playlist中的信息。</p>
-<h4 id="2-3-1-基础标签">2.3.1 基础标签<a class="post-anchor" href="#2-3-1-基础标签"></a></h4><blockquote>
+<h3 id="playlist标签">2.3 Playlist标签<a class="post-anchor" href="#playlist标签"></a></h3>
+<p>Playlist标签要么是指定全局参数，要么是指定media segment 或 media playlist中的信息。</p>
+<h4 id="基础标签">2.3.1 基础标签<a class="post-anchor" href="#基础标签"></a></h4>
+<blockquote>
 <p>EXTM3U</p>
 <p>EXT-X-VERSION</p>
 </blockquote>
 <p><1> EXTM3U,表示这是一个Extented M3U Playlist file。</p>
 <p>Its format is:</p>
-<h1 id="EXTM3U">EXTM3U<a class="post-anchor" href="#EXTM3U"></a></h1><p><2> EXT-X-VERSION,除非兼容第一个版本，否则这个标签必须出现，1个Playlist文件有且仅有一个此标签。</p>
+<p>#EXTM3U</p>
+<p><2> EXT-X-VERSION,除非兼容第一个版本，否则这个标签必须出现，1个Playlist文件有且仅有一个此标签。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-VERSION">EXT-X-VERSION:<n></n><a class="post-anchor" href="#EXT-X-VERSION"></a></h1><h4 id="2-3-2-Media-Segment-标签">2.3.2 Media Segment 标签<a class="post-anchor" href="#2-3-2-Media-Segment-标签"></a></h4><p>每一个Media Segment被一系列Media Segment标签及其后的URI所指定。</p>
+<p>#EXT-X-VERSION:<n></n></p>
+<h4 id="media-segment-标签">2.3.2 Media Segment 标签<a class="post-anchor" href="#media-segment-标签"></a></h4>
+<p>每一个Media Segment被一系列Media Segment标签及其后的URI所指定。</p>
 <p>Media Segment标签一定不能出现在Master Playlist.</p>
 <p>A playlist is a media playlist if all URI lines in the playlist identify Media Segments.</p>
 <p>A playlist is a master playlist if all URI lines in the playlist identify Media Playlists.</p>
@@ -344,10 +359,12 @@ mjx-container[display="true"] + br {
 </blockquote>
 <p><1> EXTINF,指定media segment的时长上限（适用于3以上版本）。</p>
 <p>Its format is:</p>
-<h1 id="EXTINF-lt-时长-gt-lt-标题-gt">EXTINF:<时长>,[<标题>]<a class="post-anchor" href="#EXTINF-lt-时长-gt-lt-标题-gt"></a></h1><p>时长,值为十进制浮点数。</p>
+<p>#EXTINF:<时长>,[<标题>]</p>
+<p>时长,值为十进制浮点数。</p>
 <p><2> EXT-X-BYTERANGE,指定一个media segment是URI识别资源的一个子范围（适用于4以上版本）。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-BYTERANGE-lt-字长-gt-lt-字节偏移量-gt">EXT-X-BYTERANGE:<字长>[@<字节偏移量>]<a class="post-anchor" href="#EXT-X-BYTERANGE-lt-字长-gt-lt-字节偏移量-gt"></a></h1><p>字长，值为十进制整数，表示子范围字节长度。</p>
+<p>#EXT-X-BYTERANGE:<字长>[@<字节偏移量>]</p>
+<p>字长，值为十进制整数，表示子范围字节长度。</p>
 <p>当media segment包括的URI识别整个资源时，此标签不应该出现。</p>
 <p><3> EXT-X-DISCONTINUITY,表示两个media segment的非连续性。</p>
 <p>以下几点发生变化，此标签必须出现：</p>
@@ -359,21 +376,26 @@ mjx-container[display="true"] + br {
 <p>2.编码序列</p>
 <p><4> EXT-X-KEY, media segment可能被加密，此标签表示如何解密。（作用域范围是从此标签开始到下一个EXT-X-KEY标签或文件尾结束）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-KEY-lt-属性列表-gt">EXT-X-KEY:<属性列表><a class="post-anchor" href="#EXT-X-KEY-lt-属性列表-gt"></a></h1><p>METHOD,表示加密方式，有NONE，AES-128, SAMPLE-AES</p>
+<p>#EXT-X-KEY:<属性列表></p>
+<p>METHOD,表示加密方式，有NONE，AES-128, SAMPLE-AES</p>
 <p>URI,值类型为quoted-string,表示如何获取密钥。</p>
 <p>IV,值类型为十六进制序列，值为128位无符号整型初始化向量，适用于2以上版本。</p>
 <p>KEYFORMAT,指明密钥在被URI所识别资源中如何表示。默认值是“identify”。（可选项，适用于5以上版本）</p>
 <p><5> EXT-X-MAP,指明如何获取被请求的media initialization section来解析media segment。（作用域为从此标签到下一个EXT-X-MAP标签或文件尾）（适用于5以上版本）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-MAP-lt-属性列表-gt">EXT-X-MAP:<属性列表><a class="post-anchor" href="#EXT-X-MAP-lt-属性列表-gt"></a></h1><p>URI,一个包含URI的quoted-string，此URI识别包含media initialization section的资源（必选项）。</p>
+<p>#EXT-X-MAP:<属性列表></p>
+<p>URI,一个包含URI的quoted-string，此URI识别包含media initialization section的资源（必选项）。</p>
 <p>BYTERANGE,值类型为quoted-string,指明被URI属性识别的资源的字节范围。默认字节范围是整个被URI识别的资源。（可选项）</p>
 <p><6> EXT-X-PROGRAM-DATE-TIME,将一个绝对日期或时间与一个media segment的first sample关联在一起。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-PROGRAM-DATE-TIME-lt-日期-时间-秒-gt">EXT-X-PROGRAM-DATE-TIME:<日期-时间-秒><a class="post-anchor" href="#EXT-X-PROGRAM-DATE-TIME-lt-日期-时间-秒-gt"></a></h1><p>日期-时间-秒,是ISO/IEC 8601:2004 date/time表示。</p>
+<p>#EXT-X-PROGRAM-DATE-TIME:<日期-时间-秒></p>
+<p>日期-时间-秒,是ISO/IEC 8601:2004 date/time表示。</p>
 <p>例子：</p>
-<h1 id="EXT-X-PROGRAM-DATE-TIME-2010-02-19T14-54-23-031-08-00">EXT-X-PROGRAM-DATE-TIME:2010-02-19T14:54:23.031+08:00<a class="post-anchor" href="#EXT-X-PROGRAM-DATE-TIME-2010-02-19T14-54-23-031-08-00"></a></h1><p><7> EXT-X-DATERANGE,将一个时间范围和一系列属性关联在一起。</p>
+<p>#EXT-X-PROGRAM-DATE-TIME:2010-02-19T14:54:23.031+08:00</p>
+<p><7> EXT-X-DATERANGE,将一个时间范围和一系列属性关联在一起。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-DATERANGE-lt-属性列表-gt">EXT-X-DATERANGE:<属性列表><a class="post-anchor" href="#EXT-X-DATERANGE-lt-属性列表-gt"></a></h1><p>ID，值类型为quoted-string，识别一个playlist中的日期范围。（必选项）</p>
+<p>#EXT-X-DATERANGE:<属性列表></p>
+<p>ID，值类型为quoted-string，识别一个playlist中的日期范围。（必选项）</p>
 <p>CLASS，值类型为quoted-string,为客户端自定义。（可选项）</p>
 <p>START-DATE,值类型为quoted-string,表示时间范围的起始日期。（必选项）</p>
 <p>END-DATE,值类型为quoted-string,表示时间范围的终止时间。（可选项）</p>
@@ -383,7 +405,8 @@ mjx-container[display="true"] + br {
 <p>END-ON-NEXT,值类型为enumerated-string且必须为YES，END-ON-NEXT=YES属性必须和class属性同时出现。（可选项）</p>
 <p>如果playlist包含一个EXT-X-DATERANGE标签，那么它一定包含至少一个EXT-X-PROGRAM-DATE-TIME标签。</p>
 <p>如果语法错误，客户端会忽略此标签。</p>
-<h4 id="2-3-3-Media-Playlist标签">2.3.3 Media Playlist标签<a class="post-anchor" href="#2-3-3-Media-Playlist标签"></a></h4><p>一个media playlist标签一定不能出现在master playlist中。</p>
+<h4 id="media-playlist标签">2.3.3 Media Playlist标签<a class="post-anchor" href="#media-playlist标签"></a></h4>
+<p>一个media playlist标签一定不能出现在master playlist中。</p>
 <blockquote>
 <p>EXT-X-TARGETDURATION</p>
 <p>EXT-X-MEDIA-SEQUENCE</p>
@@ -394,22 +417,28 @@ mjx-container[display="true"] + br {
 </blockquote>
 <p><1> EXT-X-TARGETDURATION,表示最大media segment时长。（必选项）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-TARGETDURATION-lt-最大时长-gt">EXT-X-TARGETDURATION:<最大时长><a class="post-anchor" href="#EXT-X-TARGETDURATION-lt-最大时长-gt"></a></h1><p>最大时长，值类型为十进制整型，单位为秒。</p>
+<p>#EXT-X-TARGETDURATION:<最大时长></p>
+<p>最大时长，值类型为十进制整型，单位为秒。</p>
 <p><2> EXT-X-MEDIA-SEQUENCE,表示出现在playlist文件中第一个media segment的序列号，默认为0。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-MEDIA-SEQUENCE-lt-序列号-gt">EXT-X-MEDIA-SEQUENCE:<序列号><a class="post-anchor" href="#EXT-X-MEDIA-SEQUENCE-lt-序列号-gt"></a></h1><p>序列号，值类型为十进制整型。</p>
+<p>#EXT-X-MEDIA-SEQUENCE:<序列号></p>
+<p>序列号，值类型为十进制整型。</p>
 <p>此标签一定出现在playlist中第一个media segment前面。</p>
 <p><3> EXT-X-DISCONTINUITY-SEQUENCE,默认为0，且必须在EXT-X-DISCONTINUITY标签之前。</p>
 <p><4> EXT-X-ENDLIST,表示不再有media segments加入到media playlist文件中。（应选项）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-ENDLIST">EXT-X-ENDLIST<a class="post-anchor" href="#EXT-X-ENDLIST"></a></h1><p><5> EXT-X-PLAYLIST-TYPE,提供media playlist文件的易变性信息。（可选项）</p>
+<p>#EXT-X-ENDLIST</p>
+<p><5> EXT-X-PLAYLIST-TYPE,提供media playlist文件的易变性信息。（可选项）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-PLAYLIST-TYPE-lt-类型-gt">EXT-X-PLAYLIST-TYPE:<类型><a class="post-anchor" href="#EXT-X-PLAYLIST-TYPE-lt-类型-gt"></a></h1><p>类型，值类型为enumerated-string,且值要么是ENENT，要么是VOD。</p>
+<p>#EXT-X-PLAYLIST-TYPE:<类型></p>
+<p>类型，值类型为enumerated-string,且值要么是ENENT，要么是VOD。</p>
 <p>ENVENT表示media segments只能加入到media playlist的尾部。</p>
 <p>VOD表示media playlist不能改变。</p>
 <p><6> EXT-X-I-FRAMES-ONLY,表示在playlist中的每一个media segment描述一个单个的I-frame。I-frame可以用作trick play,such as 快进、rapid reverse、scrubbing。（适用于4以上版本）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-I-FRAME-ONLY">EXT-X-I-FRAME-ONLY<a class="post-anchor" href="#EXT-X-I-FRAME-ONLY"></a></h1><h4 id="2-3-4-Master-Playlist-标签">2.3.4 Master Playlist 标签<a class="post-anchor" href="#2-3-4-Master-Playlist-标签"></a></h4><p>master playlist标签不能出现在media playlist中。</p>
+<p>#EXT-X-I-FRAME-ONLY</p>
+<h4 id="master-playlist-标签">2.3.4 Master Playlist 标签<a class="post-anchor" href="#master-playlist-标签"></a></h4>
+<p>master playlist标签不能出现在media playlist中。</p>
 <blockquote>
 <p>EXT-X-MEDIA</p>
 <p>EXT-X-STREAM-INF</p>
@@ -419,7 +448,8 @@ mjx-container[display="true"] + br {
 </blockquote>
 <p><1> EXT-X-MEDIA,被用来关联media playlist</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-MEDIA-lt-属性列表-gt">EXT-X-MEDIA:<属性列表><a class="post-anchor" href="#EXT-X-MEDIA-lt-属性列表-gt"></a></h1><p>TYPE，值类型为enumerated-string,且只能是AUDIO,VIDEO,SUBTITLE,CLOSED_CAPTION。（必选项）</p>
+<p>#EXT-X-MEDIA:<属性列表></p>
+<p>TYPE，值类型为enumerated-string,且只能是AUDIO,VIDEO,SUBTITLE,CLOSED_CAPTION。（必选项）</p>
 <p>URI，值类型为quoted-string,包含一个能识别media playlist文件的URI。（可选项，且TYPE为CLOSED-CAPTION时，URI属性一定不能出现）</p>
 <p>GROUP-ID，值类型为quoted string，指明rendition所属的group。（必选项）</p>
 <p>LANGUAGE，值类型为quoted-string,识别rendition使用的语言。（可选项）</p>
@@ -429,15 +459,15 @@ mjx-container[display="true"] + br {
 <p>AUTOSELECT，值类型为enumerated-string，且只能是YES或NO，默认为NO。如果DEFAULT=YES，且AUTOSELECT选项出现，则AUTOSELECT=YES。（可选项）</p>
 <p>FORCED，值类型为enumerated string，且只能是YES或NO，默认为NO。只有TYPE=SUBTITLE时，才能使用此属性。</p>
 <p>INSTREAM-ID，值类型为quoted-string,指明media playlist中segments里的一段rendition.(TYPE=CLOSED-CAPTIONS时，为必选项)</p>
-<p>CHARACTERRISTICS，值类型为quoted-string，包含1个或多个Uniform Type Identifiers[UTI]用逗号分隔。每一个UTI表示一个单独的rendition characteristic。such as,”public.accessibility.describes-video”。（可选项）</p>
+<p>CHARACTERRISTICS，值类型为quoted-string，包含1个或多个Uniform Type Identifiers[UTI]用逗号分隔。每一个UTI表示一个单独的rendition characteristic。such as,"public.accessibility.describes-video"。（可选项）</p>
 <p>CHANNELS，值类型为quoted string，指明一个有序的，用“/”分隔的参数列表。（应选项）</p>
-<p>如果TYPE=AUDIO，第一个参数表示audio通道数，其他参数目前还未定义。<br>For example, an AC-3 5.1 Rendition would have a CHANNELS=”6” attribute。</p>
+<p>如果TYPE=AUDIO，第一个参数表示audio通道数，其他参数目前还未定义。 For example, an AC-3 5.1 Rendition would have a CHANNELS="6" attribute。</p>
 <p>所有的audio EXT-X-MEDIA标签都应该有CHANNELS属性。如果一个master playlist包含两个rendition编码，且它们具有相同的codec和不同的通道数，那么CHANNELS属性是必须的，其他情况是可选的。</p>
 <p><2> EXT-X-STREAM-INF,指明Variant Stream, Variant Stream是一系列rendition,这些rendition可以结合起来进行演示。这个标签的属性用来提供关于Variant Stream的信息。</p>
 <p>在EXT-X-STREAM-INF之后的URI行，指定一个media playlist用来搬运Variant Stream的rendition。（这个URI行是必须的）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-STREAM-INF-lt-属性列表-gt">EXT-X-STREAM-INF:<属性列表><a class="post-anchor" href="#EXT-X-STREAM-INF-lt-属性列表-gt"></a></h1><uri行>
-
+<p>#EXT-X-STREAM-INF:<属性列表></p>
+<p><uri行></uri行></p>
 <p>BANDWIDTH，值类型为十进制整型，单位是bits per second,表示Variant Stream的峰值段比特率。（必选项）</p>
 <p>AVERAGE-BANDWIDTH，值类型为十进制整型，单位是bits per second，表示Variant Stream平均段比特率。（可选项）</p>
 <p>CODECS，值类型为quoted string，包含一个逗号分隔的格式化列表，每一个格式通过Variant Stream指明一个在1个或多个rendition中出现的media sample type。（应选项）</p>
@@ -451,31 +481,37 @@ mjx-container[display="true"] + br {
 <p>CLOSED-CAPTION，情况1，类上；情况2，值为enumerated string，且为NONE。此时所有EXT-X-STREAM-INF标签中的此属性值为NONE。表示Master playlist中的任何一个Variant Stream中都没有closed caption。</p>
 <p><3> EXT-X-I-FRAME-STREAM-INF，展示在一个多媒体演示中，包含I-frames的media playlist文件中的信息。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-I-FRAME-STREAM-INF-lt-属性列表-gt">EXT-X-I-FRAME-STREAM-INF:<属性列表><a class="post-anchor" href="#EXT-X-I-FRAME-STREAM-INF-lt-属性列表-gt"></a></h1><p>在 EXT-X-STREAM-INF标签下的属性，基本上在 EXT-X-I-FRAME-STREAM-INF标签中也有定义，除了FRAME-RATE,AUDIO,SUBTITLES,CLOSED-CAPTIONS。此外，还有一个属性被定义：</p>
+<p>#EXT-X-I-FRAME-STREAM-INF:<属性列表></p>
+<p>在 EXT-X-STREAM-INF标签下的属性，基本上在 EXT-X-I-FRAME-STREAM-INF标签中也有定义，除了FRAME-RATE,AUDIO,SUBTITLES,CLOSED-CAPTIONS。此外，还有一个属性被定义：</p>
 <p>URI,值类型为quoted string，包含一个识别I-frame media playlist文件的URI。这个playlist文件必须包含EXT-X-I-FRAMES-ONLY标签。</p>
 <p>每一个 EXT-X-I-FRAME-STREAM-INF标签必须包含BANDWIDTH属性和URI属性。</p>
 <p><4> EXT-X-SESSION-DATA，此标签允许master playlist中的任意会话数据被搬运。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-SESSION-DATA-lt-属性列表-gt">EXT-X-SESSION-DATA:<属性列表><a class="post-anchor" href="#EXT-X-SESSION-DATA-lt-属性列表-gt"></a></h1><p>DATA-ID,值类型为quoted string，用来识别特殊的数据值。（必选项）</p>
+<p>#EXT-X-SESSION-DATA:<属性列表></p>
+<p>DATA-ID,值类型为quoted string，用来识别特殊的数据值。（必选项）</p>
 <p>VALUE，值类型为quoted string，包含被DATA-ID识别的数据。</p>
 <p>URI，值类型为quoted string，包含一个URI。</p>
 <p>LANGUAGE，值类型为quoted string，包含一个识别VALUE语言的语言标签。</p>
 <p><5> EXT-X-SESSION-KEY，允许来自media playlist的加密密钥在master playlist中被指定。允许客户端在阅读media playlist之前预加载这些密钥。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-SESSION-KEY-lt-属性列表-gt">EXT-X-SESSION-KEY:<属性列表><a class="post-anchor" href="#EXT-X-SESSION-KEY-lt-属性列表-gt"></a></h1><p>在EXT-X-KEY标签下定义的属性也在EXT-X-SESSION-KEY下定义，除了METHOD属性值一定不能是NONE。</p>
+<p>#EXT-X-SESSION-KEY:<属性列表></p>
+<p>在EXT-X-KEY标签下定义的属性也在EXT-X-SESSION-KEY下定义，除了METHOD属性值一定不能是NONE。</p>
 <p>如果使用EXT-X-SESSION-KEY标签，那么METHOD,KEYFORMAT,KEYFORMATVERSIONS这些属性的值要与具有相同URI值的EXT-X-KEY标签相匹配。（可选项）</p>
-<h4 id="2-3-5-Media-or-Master-Playlist-标签">2.3.5 Media or Master Playlist 标签<a class="post-anchor" href="#2-3-5-Media-or-Master-Playlist-标签"></a></h4><p>这些标签在playlist中只能出现一次；在Master Playlist中出现过的，就不应该出现在Media Playlist中。</p>
+<h4 id="media-or-master-playlist-标签">2.3.5 Media or Master Playlist 标签<a class="post-anchor" href="#media-or-master-playlist-标签"></a></h4>
+<p>这些标签在playlist中只能出现一次；在Master Playlist中出现过的，就不应该出现在Media Playlist中。</p>
 <blockquote>
 <p>EXT-X-INDEPENDENT-SEGMENTS</p>
 <p>EXT-X-START</p>
 </blockquote>
 <p><1> EXT-X-INDEPENDENT-SEGMENTS，表示所有在media segment中的meida samples 可以在不需要其他segments信息的情况下进行解码。</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-INDEPENDENT-SEGMENTS">EXT-X-INDEPENDENT-SEGMENTS<a class="post-anchor" href="#EXT-X-INDEPENDENT-SEGMENTS"></a></h1><p><2> EXT-X-START，指定playlist中播放的起始点。（可选项）</p>
+<p>#EXT-X-INDEPENDENT-SEGMENTS</p>
+<p><2> EXT-X-START，指定playlist中播放的起始点。（可选项）</p>
 <p>Its format is:</p>
-<h1 id="EXT-X-START-lt-属性列表-gt">EXT-X-START:<属性列表><a class="post-anchor" href="#EXT-X-START-lt-属性列表-gt"></a></h1><p>TIME-OFFSET，值类型为有符号十进制浮点数，指时间偏移量，单位是秒。（必选项）正值表示从playlist开始处，偏移的正时间量；负值表示从playlist的结尾处偏移的负时间量。</p>
+<p>#EXT-X-START:<属性列表></p>
+<p>TIME-OFFSET，值类型为有符号十进制浮点数，指时间偏移量，单位是秒。（必选项）正值表示从playlist开始处，偏移的正时间量；负值表示从playlist的结尾处偏移的负时间量。</p>
 <p>PRECISE，值类型为enumerated-string，且值为YES或NO。if YES，客户端从偏移量确定的起始点开始播放；if NO，客户端从偏移量确定的起始点所在的media segment的开头进行播放。默认为NO。（可选项）</p>
-</uri行></body></html>
+</body></html>
 
   
     <div class="post-reward">
