@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lihanx.com/"/>
-  <updated>2021-02-02T04:43:41.933Z</updated>
+  <updated>2021-03-06T04:28:48.243Z</updated>
   <id>https://lihanx.com/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>压榨农村</title>
+    <link href="https://lihanx.com/blog/23005.html"/>
+    <id>https://lihanx.com/blog/23005.html</id>
+    <published>2021-03-06T00:31:01.489Z</published>
+    <updated>2021-03-06T04:28:48.243Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;压榨农村&quot;&gt;压榨农村&lt;a class=&quot;post-anchor&quot; href=&quot;#压榨农村&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;伴随着资本的快速增长，趁着文艺复兴的东风，人类文明迈入了一个新时代。机器的大量出现，使得人类的生
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>List of java problems</title>
+    <link href="https://lihanx.com/blog/5503.html"/>
+    <id>https://lihanx.com/blog/5503.html</id>
+    <published>2021-02-02T14:04:54.133Z</published>
+    <updated>2021-02-02T14:22:29.856Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;list-of-java-problems&quot;&gt;List of java problems&lt;a class=&quot;post-anchor&quot; href=&quot;#list-of-java-problems&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>powershell基本命令</title>
     <link href="https://lihanx.com/blog/49994.html"/>
     <id>https://lihanx.com/blog/49994.html</id>
     <published>2021-02-02T04:27:27.551Z</published>
-    <updated>2021-02-02T04:43:41.933Z</updated>
+    <updated>2021-02-02T07:15:28.864Z</updated>
     
     <summary type="html">
     
@@ -392,27 +434,6 @@
     
     
       <category term="powershell" scheme="https://lihanx.com/tags/powershell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图床工具选择</title>
-    <link href="https://lihanx.com/blog/6883.html"/>
-    <id>https://lihanx.com/blog/6883.html</id>
-    <published>2020-07-29T05:07:44.957Z</published>
-    <updated>2020-08-05T12:08:12.136Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;图床工具&quot;&gt;图床工具&lt;a class=&quot;post-anchor&quot; href=&quot;#图床工具&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;因为搭建博客使用markdown工具，插入图片这种刚需就需要借助图床工具来来实现，本人大概了解了
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
