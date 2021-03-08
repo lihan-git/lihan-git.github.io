@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lihanx.com/"/>
-  <updated>2021-03-06T04:28:48.243Z</updated>
+  <updated>2021-03-08T01:36:16.161Z</updated>
   <id>https://lihanx.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>To Kill a Mockingbird</title>
+    <link href="https://lihanx.com/blog/42300.html"/>
+    <id>https://lihanx.com/blog/42300.html</id>
+    <published>2021-03-07T15:40:17.138Z</published>
+    <updated>2021-03-08T01:36:16.161Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;杀死一只知更鸟&quot;&gt;杀死一只知更鸟&lt;a class=&quot;post-anchor&quot; href=&quot;#杀死一只知更鸟&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;作者：&lt;strong&gt;&lt;em&gt;Harper Lee&lt;/em&gt;&lt;/strong&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>压榨农村</title>
     <link href="https://lihanx.com/blog/23005.html"/>
     <id>https://lihanx.com/blog/23005.html</id>
     <published>2021-03-06T00:31:01.489Z</published>
-    <updated>2021-03-06T04:28:48.243Z</updated>
+    <updated>2021-03-07T01:54:10.494Z</updated>
     
     <summary type="html">
     
@@ -42,7 +63,7 @@
     <link href="https://lihanx.com/blog/5503.html"/>
     <id>https://lihanx.com/blog/5503.html</id>
     <published>2021-02-02T14:04:54.133Z</published>
-    <updated>2021-02-02T14:22:29.856Z</updated>
+    <updated>2021-03-07T01:54:10.492Z</updated>
     
     <summary type="html">
     
@@ -412,28 +433,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Excution policy in windows powershell</title>
-    <link href="https://lihanx.com/blog/17117.html"/>
-    <id>https://lihanx.com/blog/17117.html</id>
-    <published>2020-08-03T02:50:33.000Z</published>
-    <updated>2020-09-13T02:07:00.828Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;windows-powershell-的执行策略&quot;&gt;windows powershell 的执行策略&lt;a class=&quot;post-anchor&quot; href=&quot;#windows-powershell-的执行策略&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-    
-      <category term="powershell" scheme="https://lihanx.com/tags/powershell/"/>
     
   </entry>
   
