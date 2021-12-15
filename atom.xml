@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lihanx.com/"/>
-  <updated>2021-05-17T04:27:27.738Z</updated>
+  <updated>2021-12-15T01:28:44.906Z</updated>
   <id>https://lihanx.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux 常用快捷键</title>
+    <link href="https://lihanx.com/blog/50709.html"/>
+    <id>https://lihanx.com/blog/50709.html</id>
+    <published>2021-12-15T00:59:20.341Z</published>
+    <updated>2021-12-15T01:28:44.906Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;linux-常用快捷键&quot;&gt;linux 常用快捷键&lt;a class=&quot;post-anchor&quot; href=&quot;#linux-常用快捷键&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;super + Tab : 切换运行中的应用&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>文档共享</title>
@@ -41,7 +63,7 @@
     <link href="https://lihanx.com/blog/24286.html"/>
     <id>https://lihanx.com/blog/24286.html</id>
     <published>2021-04-18T12:43:22.628Z</published>
-    <updated>2021-05-17T04:44:53.887Z</updated>
+    <updated>2021-05-17T04:54:10.701Z</updated>
     
     <summary type="html">
     
@@ -409,26 +431,6 @@
         &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;论政府&quot;&gt;论政府&lt;a class=&quot;post-anchor&quot; href=&quot;#论政府&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;政府存在的意义：用权利剥夺权利。&lt;/p&gt;
 &lt;/body&gt;&lt;/html&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>http-live-streaming介绍</title>
-    <link href="https://lihanx.com/blog/49096.html"/>
-    <id>https://lihanx.com/blog/49096.html</id>
-    <published>2020-10-26T02:21:52.146Z</published>
-    <updated>2020-10-26T14:54:49.973Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;http-live-streaming-介绍&quot;&gt;http live streaming 介绍&lt;a class=&quot;post-anchor&quot; href=&quot;#http-live-streaming-介绍&quot;&gt;&lt;/a&gt;&lt;/h
       
     
     </summary>
